@@ -21,41 +21,41 @@
             </div>
             <div class="flex justify-between items-center gap-2">
                 <img src="assets/coin.png" alt="">
-                <h2 class="font-bold">5500 BDT</h2>
+                <h2 class="font-bold"><span id="main-balance">5500</span> BDT</h2>
             </div>
         </nav>
     </header>
     <main class="mb-[80px]">
-        <div class="flex justify-center items-center gap-4 mb-[32px]">
-            <button class="btn rounded-lg font-bold px-8 py-4 shadow-lg">Donation</button>
-            <button class=" btn rounded-lg font-bold px-8 py-4 shadow-lg">History</button>
+        <div class="flex justify-center items-center gap-10 mb-[32px]">
+            <button id="donation-btn" class="btn rounded-lg font-bold px-8 py-4 shadow-lg  bg-lime-400">Donation</button>
+            <button id="history-btn" class=" btn rounded-lg font-bold px-8 py-4 shadow-lg">History</button>
         </div>
-        <section class="flex gap-6 w-7/12 mx-auto p-[32px] section1 rounded-2xl mb-[32px]">
+        <section class="gap-6 w-8/12 mx-auto p-[32px] section1 rounded-2xl mb-[32px] shadow-lg lg:flex ">
             <div>
                 <img class="h-[380px]" src="assets/noakhali.png" alt="">
             </div>
-            <div class="w-[522px]">
-                <a class="flex items-center gap-2 mb-[12px] a h-[44px] w-[110px] justify-center rounded-lg" href="">
+            <div class="lg:w-[522px]">
+               <a class="flex items-center gap-2 mb-[12px] sm:mt-[12px] lg:mt-[0px] a h-[44px] w-[110px] justify-center rounded-lg" href="">
                     <img src="assets/coin.png" alt="">
-                    <h3 class="font-bold">0 BDT</h3>
+                    <h3 id="fonts" class="font-bold"><span id="donate-balance">500</span>BDT</h3>
                 </a>
                 <h2 class="mb-[10px] font-extrabold">Donate for Flood at Noakhali, Bangladesh
                 </h2>
                 <p class="mb-[12px]">Severe floods have swept through Noakhali, Bangladesh, leaving a trail of destruction. Entire communities have been submerged, with families losing their homes, food supplies, and access to clean water. The floodwaters have also washed away crops, vital infrastructure, and roads, making it difficult for relief efforts to reach those in need. Your generous donation can help provide immediate relief to those suffering. Funds will go toward.
                 </p>
                 <div class="flex flex-col">
-                    <input class="mb-[10px] hover:border-black-300 h-[50px] rounded-lg my-btn" placeholder="Write Donation Amount" type="text">
-                    <button class="btn font-bold bg-lime-400 rounded-lg">Donate Now</button>
-                </div>
-            </div>
+                    <input id="input-add-money" class="mb-[10px] hover:border-black-300 h-[50px] rounded-lg my-btn" placeholder="Write Donation Amount" type="text">
+                    <button id="calculate" class="btn font-bold bg-lime-400 rounded-lg">Donate Now</button>
+               </div>                    
+           </div>
         </section>
 
-        <section class="flex gap-6 w-7/12 mx-auto p-[32px] section1 rounded-2xl mb-[32px]">
+        <section class="lg:flex gap-6 w-8/12 mx-auto p-[32px] section1 rounded-2xl mb-[32px] shadow-lg">
             <div>
-                <img class="h-[380px]" src="assets/feni.png" alt="">
+                <img class="h-[380px] w-[510px]" src="assets/feni.png" alt="">
             </div>
-            <div class="w-[522px]">
-                <a class="flex items-center gap-2 mb-[12px] a h-[44px] w-[110px] justify-center rounded-lg" href="">
+            <div class="lg:w-[522px]">
+                <a class="flex items-center gap-2 mb-[12px] sm:mt-[12px] lg:mt-[0px] a h-[44px] w-[110px] justify-center rounded-lg" href="">
                     <img src="assets/coin.png" alt="">
                     <h3 class="font-bold">0 BDT</h3>
                 </a>
@@ -72,12 +72,12 @@
             </div>
         </section>
 
-        <section class="flex gap-6 w-7/12 mx-auto p-[32px] section1 rounded-2xl">
+        <section class="lg:flex gap-6 w-8/12 mx-auto p-[32px] section1 rounded-2xl shadow-lg">
             <div>
-                <img class="h-[380px]" src="assets/quota-protest.png" alt="">
+                <img class="h-[380px] w-[510px]" src="assets/quota-protest.png" alt="">
             </div>
-            <div class="w-[522px]">
-                <a class="flex items-center gap-2 mb-[12px] a h-[44px] w-[110px] justify-center rounded-lg" href="">
+            <div class="lg:w-[522px]">
+                <a class="flex items-center gap-2 mb-[12px] sm:mt-[12px] lg:mt-[0px]  a h-[44px] w-[110px] justify-center rounded-lg" href="">
                     <img src="assets/coin.png" alt="">
                     <h3 class="font-bold">0 BDT</h3>
                 </a>
@@ -94,5 +94,7 @@
         </section>
     </main>
     <footer class="bg-[#F9F7F3] py-14"></footer>
+    <script src="./js/utilize .js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
