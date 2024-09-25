@@ -30,7 +30,7 @@
             <button id="donation-btn" class="btn rounded-lg font-bold px-8 py-4 shadow-lg  bg-lime-400">Donation</button>
             <button id="history-btn" class=" btn rounded-lg font-bold px-8 py-4 shadow-lg">History</button>
         </div>
-        <section class="gap-6 w-8/12 mx-auto p-[32px] section1 rounded-2xl mb-[32px] shadow-lg lg:flex ">
+        <section id="sections" class="gap-6 w-8/12 mx-auto p-[32px] section1 rounded-2xl mb-[32px] shadow-lg lg:flex ">
             <div>
                 <img class="h-[380px]" src="assets/noakhali.png" alt="">
             </div>
@@ -45,7 +45,20 @@
                 </p>
                 <div class="flex flex-col">
                     <input id="input-add-money" class="mb-[10px] hover:border-black-300 h-[50px] rounded-lg my-btn" placeholder="Write Donation Amount" type="text">
-                    <button id="calculate" class="btn font-bold bg-lime-400 rounded-lg">Donate Now</button>
+                    <button onclick="my_modal_1.showModal()" id="calculate_1" class="btn font-bold bg-lime-400 rounded-lg">Donate Now</button>
+                    <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                    <h3 class="text-3xl flex justify-center font-extrabold items-center">Congratulations!</h3>
+                    <i class="fa-solid fa-check-double"></i>
+                    <p class="py-4 flex justify-center font-bold w-8/12 mx-auto">Thank you for donating assets to those people who are now in a difficultly with flood decimation.</p>
+                    <div class="modal-action">
+                    <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn flex justify-center items-center">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
                </div>                    
            </div>
         </section>
@@ -67,7 +80,7 @@
                 </p>
                 <div class="flex flex-col">
                     <input class="mb-[10px] hover:border-black-300 h-[50px] rounded-lg my-btn" placeholder="Write Donation Amount" type="text">
-                    <button class="btn font-bold bg-lime-400 rounded-lg">Donate Now</button>
+                    <button onclick="my_modal_1.showModal()" class="btn font-bold bg-lime-400 rounded-lg">Donate Now</button>
                 </div>
             </div>
         </section>
@@ -88,10 +101,37 @@
                 </p>
                 <div class="flex flex-col">
                     <input class="mb-[10px] hover:border-black-300 h-[50px] rounded-lg my-btn" placeholder="Write Donation Amount" type="text">
-                    <button class="btn font-bold bg-lime-400 rounded-lg">Donate Now</button>
+                    <button onclick="my_modal_1.showModal()" class="btn font-bold bg-lime-400 rounded-lg">Donate Now</button>  
                 </div>
             </div>
         </section>
+
+
+<!-- other new section -->
+        <section id="sections-new" class="hidden">
+            <header class=" bg-[#F9F7F3] mb-[80px] sticky top-0">
+                <nav class="flex justify-between py-6 items-center w-11/12 mx-auto">
+                    <a href="blog.html"><button class="btn py-3 px-8 bg-lime-400 rounded-lg font-bold">Blog</button></a>
+                    <div class="flex justify-between items-center gap-2">
+                        <img src="assets/logo.png" alt="">
+                        <h2 class="font-bold">Donate Bangladesh</h2>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                        <img src="assets/coin.png" alt="">
+                        <h2 class="font-bold"><span id="main-balance">5500</span> BDT</h2>
+                    </div>
+                </nav>
+            </header>
+            <main class="mb-[80px]>
+                <div class="flex justify-center items-center gap-10 mb-[32px]">
+                    <button id="donation-btn" class="btn rounded-lg font-bold px-8 py-4 shadow-lg  bg-lime-400">Donation</button>
+                    <button id="history-btn" class=" btn rounded-lg font-bold px-8 py-4 shadow-lg">History</button>
+                </div>
+            </main>
+            <footer class="bg-[#F9F7F3] py-14"></footer>
+        </section>
+
+
     </main>
     <footer class="bg-[#F9F7F3] py-14"></footer>
     <script src="./js/utilize .js"></script>
